@@ -5,7 +5,7 @@ import os
 # 1. CONFIGURAÇÃO DA INTELIGÊNCIA
 # No Streamlit Cloud, vamos configurar a chave em 'Secrets' depois
 # Por enquanto, você pode testar colando sua chave aqui entre as aspas:
-API_KEY = "SUA_CHAVE_AQUI" 
+API_KEY = "AIzaSyDINFYJ-Zd7edVh-20h6NxnyKx-DRWqltw" 
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
