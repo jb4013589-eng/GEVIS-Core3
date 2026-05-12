@@ -6,7 +6,7 @@ import os
 os.environ["GOOGLE_API_USE_MTLS_ENDPOINT"] = "never"
 
 # 1. CONFIGURAÇÃO DA INTELIGÊNCIA
-API_KEY = "AIzaSyDINFYJ-Zd7edVh-2Oh6NxnyKx-DRWqltw" 
+API_KEY = "AIzaSyDQJrovtpwmDCsWtrtViC0x5udzBklU4SE" 
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
