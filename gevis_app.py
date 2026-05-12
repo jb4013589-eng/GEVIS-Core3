@@ -1,12 +1,12 @@
 import streamlit as st
 import google.generativeai as genai
-import os.environ["GOOGLE_API_USE_MTLS_ENDPOINT"] = "never"
+import os
 
+# Configuração de segurança para a API
+os.environ["GOOGLE_API_USE_MTLS_ENDPOINT"] = "never"
 
 # 1. CONFIGURAÇÃO DA INTELIGÊNCIA
-# No Streamlit Cloud, vamos configurar a chave em 'Secrets' depois
-# Por enquanto, você pode testar colando sua chave aqui entre as aspas:
-API_KEY = "AIzaSyDINFYJ-Zd7edVh-20h6NxnyKx-DRWqltw" 
+API_KEY = "AIzaSyDINFYJ-Zd7edVh-2Oh6NxnyKx-DRWqltw" 
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
