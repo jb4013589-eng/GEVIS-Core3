@@ -1,6 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
-import os
+import os.environ["GOOGLE_API_USE_MTLS_ENDPOINT"] = "never"
+
 
 # 1. CONFIGURAÇÃO DA INTELIGÊNCIA
 # No Streamlit Cloud, vamos configurar a chave em 'Secrets' depois
@@ -8,7 +9,7 @@ import os
 API_KEY = "AIzaSyDINFYJ-Zd7edVh-20h6NxnyKx-DRWqltw" 
 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 # 2. CONFIGURAÇÃO DA INTERFACE (MANTENDO A ESTÉTICA)
 st.set_page_config(page_title="GEVIS Core", page_icon="🧠")
